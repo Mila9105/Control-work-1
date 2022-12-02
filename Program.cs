@@ -1,10 +1,9 @@
-﻿string[] array1 = new string[4] {"hello", "2", "world", ":-)"};
+﻿string[] array1=new string[4] {"hello", "2", "world", ":-)"};
 string[] array2 = new string[array1.Length];
-
 void ArrayIF(string[] array1, string[] array2)
 {
     int count = 0;
-    for (int i = 0; i < array1.Length; i++)
+    for (int i = 0; i<array1.Length; i++)
     {
     if(array1[i].Length <= 3)
         {
@@ -21,6 +20,5 @@ void PrintArray(string[] array)
     }
     Console.WriteLine();
 }
-
 ArrayIF(array1, array2);
 PrintArray(array2);
